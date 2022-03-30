@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM 03</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src = "rule.js"></script>
+</head>
+
+<body>
+	<form name="f" action="https://fit.agu.edu.vn/demo.php" method="get">
+		<table border="1" width="350" align="center">
+
+			<tr>
+				<th colspan="2">
+					Login form
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					Fullname:
+				</td>
+				<td>
+					<input type = "text" name = "txtFullname"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Email:
+				</td>
+				<td>
+					<input type = "text" name = "txtEmail"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Address:
+				</td>
+				<td>
+					<input type = "text" name = "txtAddress"/>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					Class:
+				</td>
+				<td>
+					<select > 
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="opel">Opel</option>
+						<option value="audi">Audi</option>
+					</select>
+				</td>>
+			</tr>
+
+			<tr>
+				<td>
+					Your question:
+				</td>
+				<td>
+					<input type = "text" name = "txtPhone"/>
+				</td>
+			</tr>
+
+			<te>
+				<th colspan="2">
+					<button onclick="return isTextNull()"> 
+						Send
+					</button>
+					<button type="reset">
+						Clear
+					</button>
+				</th>
+			</te>
+
+		</table>
+	</form>
+</body>
+
+</html>

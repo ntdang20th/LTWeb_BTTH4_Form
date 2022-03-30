@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM 04</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="style.css">
+	<script src = "rule.js"></script>
+
+</head>
+
+<body>
+	<form name="f" action="https://fit.agu.edu.vn/demo.php" method="get">
+		<table border="1" width="500px"  align="center">
+
+			<tr>
+				<th colspan="2">
+					Login form
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					Fullname:
+				</td>
+				<td>
+					<input class="txt"  type = "text" name = "txtFullname"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Date of birth:
+				</td>
+				<td>
+					<select name = "cbbDay"> 
+						<option value="" >Day</option>
+						<script>
+							for(var i = 1; i <= 31; i++){
+								document.write('<option>'+i+'</option>');
+							}
+						</script>
+					</select>
+					<select name = "cbbMonth"> 
+						<option value="" >Month</option>
+						<script>
+							for(var i = 1; i <= 12; i++){
+								document.write('<option>'+i+'</option>');
+							}
+						</script>
+					</select>
+					<select name = "cbbYear"> 
+						<option value="" >Year</option>
+						<script>
+							var d = new Date();
+							var y = d.getFullYear();
+							for(var i = 1970; i <= y; i++){
+								document.write('<option>'+i+'</option>');
+							}
+						</script>
+					</select>
+				</td>>
+			</tr>
+
+			<tr>
+				<td>
+					Sex:
+				</td>
+				<td>
+					<input class="rdb" type = "radio" name = "rdbSex" checked value="Male"/>Male
+					<input class="rdb" type = "radio" name = "rdbSex" value="Female"/>Female
+					<input class="rdb" type = "radio" name = "rdbSex" value="Other"/>Other
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Career:
+				</td>
+				<td>
+					<select class="carrer" name="cbbCarrer">
+						<option value = ''>--Choose--</option>
+						<option>Lawyer</option>
+						<option>Engineer</option>
+						<option>Doctor</option>
+						<option>Teacher</option>
+						<option>Student</option>
+						<option>Other</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Note:
+				</td>
+				<td>
+					<textarea  name = "txaNote"> Note here</textarea>
+				</td>
+			</tr>
+
+			<te>
+				<th colspan="2">
+					<button onclick="return isTextNull()"> 
+						Submit
+					</button>
+					<button type="reset">
+						Clear
+					</button>
+				</th>
+			</te>
+
+		</table>
+	</form>
+</body>
+
+</html>
